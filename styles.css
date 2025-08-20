@@ -81,13 +81,13 @@ body {
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         max-width: 98%;
-        gap: 5px;
+        gap: 4px;
     }
     
     .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
-    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only {
+    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only, .tagline-line-5.mobile-only {
         word-wrap: break-word;
         hyphens: auto;
     }
@@ -419,10 +419,10 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2.1rem;
+        font-size: 2.6rem;
         max-width: 95%;
         transform: none;
-        gap: 6px;
+        gap: 5px;
         line-height: 1.2;
     }
     
@@ -437,7 +437,7 @@ body.team-page {
     
     /* Mobile tagline line styling */
     .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
-    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only {
+    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only, .tagline-line-5.mobile-only {
         white-space: normal;
         text-align: center;
     }
