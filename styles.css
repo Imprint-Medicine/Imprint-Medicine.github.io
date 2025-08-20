@@ -68,6 +68,36 @@ body {
     white-space: nowrap;
 }
 
+/* Mobile tagline adjustments */
+@media (max-width: 768px) {
+    .tagline-line-1, .tagline-line-2 {
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .main-tagline {
+        font-size: 2.5rem;
+        max-width: 98%;
+        gap: 8px;
+    }
+    
+    .tagline-line-1, .tagline-line-2 {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+    
+    .small-logo {
+        max-width: 160px;
+    }
+}
+
 .main-tagline .highlight-text {
     color: #3260F2;
     -webkit-text-fill-color: #3260F2;
@@ -386,11 +416,11 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2rem;
-        max-width: 90%;
-        transform: scale(0.8);
-        transform-origin: center;
-        gap: 5px;
+        font-size: 3rem;
+        max-width: 95%;
+        transform: none;
+        gap: 10px;
+        line-height: 1.2;
     }
     
     /* Technology page mobile layout */
@@ -448,26 +478,26 @@ body.team-page {
     }
     
     .nav-header {
-        top: 12px;
-        right: 20px;
+        top: 20px;
+        right: 25px;
     }
     
     .nav-links {
-        gap: 20px;
+        gap: 25px;
     }
     
     .nav-links a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     /* Logo scaling for mobile - proportional to navigation text */
     .small-logo {
-        max-width: 140px;
+        max-width: 180px;
     }
     
     .top-left-logo {
-        top: 12px;
-        left: 20px;
+        top: 20px;
+        left: 25px;
     }
     
     /* Team page mobile adjustments */
