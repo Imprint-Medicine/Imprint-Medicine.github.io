@@ -79,7 +79,7 @@ body {
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         max-width: 98%;
         gap: 8px;
     }
@@ -416,7 +416,7 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         max-width: 95%;
         transform: none;
         gap: 10px;
