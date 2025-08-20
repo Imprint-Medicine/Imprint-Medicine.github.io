@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tagline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-tagline {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    max-width: 1000px;
+    line-height: 1.3;
+    margin: 0 auto;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0;
+    opacity: 1;
+    z-index: 10;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-tagline:hover {
+    opacity: 0.8;
+}
+
+.tagline-line-1, .tagline-line-2 {
+    white-space: nowrap;
+}
+
+.main-tagline .highlight-text {
+    color: #3260F2;
+    -webkit-text-fill-color: #3260F2;
+    -webkit-text-stroke: 0;
+}
+
+
+
+
+
+
+
+/* Navigation header */
+.nav-header {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.9;
+}
+
+/* Top left logo for subpages */
+.top-left-logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+.small-logo {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.small-logo:hover {
+    transform: scale(1.02);
+}
+
+/* Technology page - green to dark green gradient */
+body.technology-page {
+    background: linear-gradient(135deg, #C7FFA9 0%, #0B100D 100%);
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* About Us page - teal to dark green gradient */
+body.about-page {
+    background: linear-gradient(135deg,#0B100D 0%,  #143745 100%);
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Team page - teal to dark green gradient */
+body.team-page {
+    background: linear-gradient(135deg, #0B100D 0%, #2F6363 100%);
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Page title container for subpages */
+.page-title-container {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Content container for subpages */
+.content-container {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+    width: 90%;
+    z-index: 10;
+}
+
+.content-container.about-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Team container styling */
+.team-container {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+}
+
+.team-member {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-photo {
+    max-width: 210px;
+    height: auto;
+    margin-bottom: 4px;
+    transition: filter 0.3s ease;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-photo:hover {
+    /* Removed shadow/drop effect */
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #C7FFA9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: left;
+}
+
+.photo-container:hover .photo-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Technology page styling */
+.technology-text {
+    margin-bottom: 40px;
+}
+
+.technology-text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+}
+
+.technology-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.figure-container {
+    flex-shrink: 0;
+}
+
+.technology-figure {
+    max-width: 500px;
+    height: auto;
+}
+
+.bullet-points {
+    flex: 1;
+}
+
+.bullet-item {
+    margin-bottom: 30px;
+}
+
+.bullet-title {
+    font-size: 1.3rem;
+    color: #C7FFA9;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.bullet-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+}
+
+.team-member {
+    text-align: left;
+}
+
+.team-name {
+    font-size: 1rem;
+    color: white;
+    margin: 0 0 4px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.about-text {
+    margin-bottom: 40px;
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.map-container {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 300px;
+}
+
+.email-link {
+    color: #C7FFA9;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.email-link:hover {
+    opacity: 0.8;
+}
+
+.linkedin-link {
+    color: #C7FFA9;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.linkedin-link:hover {
+    opacity: 0.8;
+}
+
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 250px;
+    }
+    
+
+    
+
+    
+    .container {
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .main-tagline {
+        font-size: 2rem;
+        max-width: 90%;
+        transform: scale(0.8);
+        transform-origin: center;
+        gap: 5px;
+    }
+    
+    /* Technology page mobile layout */
+    .technology-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .technology-figure {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .bullet-points {
+        width: 100%;
+    }
+    
+    .bullet-item {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .bullet-title {
+        font-size: 1.2rem;
+    }
+    
+    .bullet-text {
+        font-size: 1rem;
+    }
+    
+    /* Subpage mobile adjustments */
+    .content-container {
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+        width: 90%;
+    }
+    
+    .content-container.about-page {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .map-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .page-title-container {
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .nav-header {
+        top: 12px;
+        right: 20px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+    }
+    
+    /* Logo scaling for mobile - proportional to navigation text */
+    .small-logo {
+        max-width: 140px;
+    }
+    
+    .top-left-logo {
+        top: 12px;
+        left: 20px;
+    }
+    
+    /* Team page mobile adjustments */
+    .team-container {
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .team-photo {
+        max-width: 200px;
+    }
+    
+    .team-member {
+        text-align: center;
+    }
+}
+
+

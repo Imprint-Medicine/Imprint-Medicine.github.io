@@ -1,0 +1,134 @@
+html, body {
+  background: linear-gradient(135deg, #0B100D 0%, #D2E7FC 100%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Dust particles container */
+.dust-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Large dust background images - HUGE canvases */
+.dust-bg-1 {
+  position: absolute;
+  height: 10000px;
+  width: 10000px;
+  top: -4500px;
+  left: -4500px;
+  opacity: 0.25;
+  background: url('dust1.jpg');
+  background-repeat: repeat;
+  background-size: 800px 800px;
+  animation: float-bg-1 60s linear infinite;
+  z-index: 1;
+}
+
+.dust-bg-2 {
+  position: absolute;
+  height: 10000px;
+  width: 10000px;
+  top: -4500px;
+  left: -4500px;
+  opacity: 0.2;
+  background: url('dust2.jpg');
+  background-repeat: repeat;
+  background-size: 600px 600px;
+  animation: float-bg-2 50s linear infinite;
+  z-index: 1;
+}
+
+.dust-bg-3 {
+  position: absolute;
+  height: 10000px;
+  width: 10000px;
+  top: -4500px;
+  left: -4500px;
+  opacity: 0.15;
+  background: url('dust3.jpg');
+  background-repeat: repeat;
+  background-size: 500px 500px;
+  animation: float-bg-3 40s linear infinite;
+  z-index: 1;
+}
+
+/* Additional floating elements for depth */
+.floating-element {
+  position: absolute;
+  opacity: 0.1;
+  animation: float-slow 50s linear infinite;
+  z-index: 2;
+}
+
+.floating-element:nth-child(4) {
+  top: 5%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation-delay: 0s;
+}
+
+.floating-element:nth-child(5) {
+  top: 75%;
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  animation-delay: 10s;
+}
+
+.floating-element:nth-child(6) {
+  top: 45%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+  animation-delay: 20s;
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, -30px);
+  }
+}
+
+@keyframes float-bg-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(1000px, -500px);
+  }
+}
+
+@keyframes float-bg-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-800px, -300px);
+  }
+}
+
+@keyframes float-bg-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(600px, 400px);
+  }
+}
