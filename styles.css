@@ -79,7 +79,7 @@ body {
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 2rem;
+        font-size: 1.8rem;
         max-width: 98%;
         gap: 8px;
     }
@@ -416,7 +416,7 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         max-width: 95%;
         transform: none;
         gap: 10px;
@@ -454,7 +454,7 @@ body.team-page {
     
     /* Subpage mobile adjustments */
     .content-container {
-        top: 140px;
+        top: 120px;
         left: 50%;
         transform: translateX(-50%);
         max-width: 90%;
@@ -472,7 +472,7 @@ body.team-page {
     }
     
     .page-title-container {
-        top: 40px;
+        top: 60px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -502,7 +502,7 @@ body.team-page {
     
     /* Team page mobile adjustments */
     .team-container {
-        top: 140px;
+        top: 120px;
         left: 50%;
         transform: translateX(-50%);
         flex-direction: column;
