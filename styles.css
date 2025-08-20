@@ -82,7 +82,7 @@ body {
 @media (max-width: 480px) {
     .main-tagline {
         font-size: 2rem;
-        max-width: 98%;
+        max-width: 99%;
         gap: 4px;
     }
     
@@ -414,16 +414,16 @@ body.team-page {
 
     
     .container {
-        padding: 20px;
+        padding: 10px;
         justify-content: center;
     }
     
     .main-tagline {
         font-size: 2.3rem;
-        max-width: 95%;
+        max-width: 98%;
         transform: none;
         gap: 5px;
-        line-height: 1.2;
+        line-height: 1.1;
     }
     
     /* Show mobile tagline, hide desktop tagline */
