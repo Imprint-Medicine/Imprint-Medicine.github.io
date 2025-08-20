@@ -73,27 +73,21 @@ body {
     opacity: 0.8;
 }
 
-.tagline-line-1, .tagline-line-2 {
+/* Desktop tagline lines */
+.tagline-line-1.desktop-only, .tagline-line-2.desktop-only {
     white-space: nowrap;
-}
-
-/* Mobile tagline adjustments */
-@media (max-width: 768px) {
-    .tagline-line-1, .tagline-line-2 {
-        white-space: normal;
-        text-align: center;
-    }
 }
 
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 1.7rem;
+        font-size: 2rem;
         max-width: 98%;
         gap: 5px;
     }
     
-    .tagline-line-1, .tagline-line-2 {
+    .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
+    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only {
         word-wrap: break-word;
         hyphens: auto;
     }
@@ -425,7 +419,7 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2rem;
+        font-size: 2.4rem;
         max-width: 95%;
         transform: none;
         gap: 6px;
@@ -439,6 +433,13 @@ body.team-page {
     
     .mobile-only {
         display: block;
+    }
+    
+    /* Mobile tagline line styling */
+    .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
+    .tagline-line-3.mobile-only, .tagline-line-4.mobile-only {
+        white-space: normal;
+        text-align: center;
     }
     
     /* Technology page mobile layout */
