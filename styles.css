@@ -60,6 +60,15 @@ body {
     gap: 10px;
 }
 
+/* Desktop vs Mobile tagline display */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 .main-tagline:hover {
     opacity: 0.8;
 }
@@ -79,9 +88,9 @@ body {
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         max-width: 98%;
-        gap: 8px;
+        gap: 5px;
     }
     
     .tagline-line-1, .tagline-line-2 {
@@ -416,11 +425,20 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 1.8rem;
+        font-size: 2rem;
         max-width: 95%;
         transform: none;
-        gap: 10px;
+        gap: 6px;
         line-height: 1.2;
+    }
+    
+    /* Show mobile tagline, hide desktop tagline */
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: block;
     }
     
     /* Technology page mobile layout */
