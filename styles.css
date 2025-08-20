@@ -88,8 +88,9 @@ body {
     
     .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
     .tagline-line-3.mobile-only, .tagline-line-4.mobile-only, .tagline-line-5.mobile-only {
-        word-wrap: break-word;
-        hyphens: auto;
+        white-space: nowrap;
+        word-wrap: normal;
+        hyphens: none;
     }
     
     .nav-links a {
@@ -438,7 +439,7 @@ body.team-page {
     /* Mobile tagline line styling */
     .tagline-line-1.mobile-only, .tagline-line-2.mobile-only, 
     .tagline-line-3.mobile-only, .tagline-line-4.mobile-only, .tagline-line-5.mobile-only {
-        white-space: normal;
+        white-space: nowrap;
         text-align: center;
     }
     
