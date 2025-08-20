@@ -81,7 +81,7 @@ body {
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .main-tagline {
-        font-size: 2.2rem;
+        font-size: 2rem;
         max-width: 98%;
         gap: 4px;
     }
@@ -419,7 +419,7 @@ body.team-page {
     }
     
     .main-tagline {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         max-width: 95%;
         transform: none;
         gap: 5px;
@@ -440,6 +440,11 @@ body.team-page {
     .tagline-line-3.mobile-only, .tagline-line-4.mobile-only, .tagline-line-5.mobile-only {
         white-space: normal;
         text-align: center;
+    }
+    
+    /* Add extra space between Epigenetics and Redefining to group the lines */
+    .tagline-line-2.mobile-only {
+        margin-bottom: 8px;
     }
     
     /* Technology page mobile layout */
